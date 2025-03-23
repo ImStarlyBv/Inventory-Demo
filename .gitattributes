@@ -1,0 +1,29 @@
+# Normaliza los finales de línea para todos los archivos de texto
+* text=auto
+
+# Asegura que los archivos con extensiones específicas se traten como texto
+*.txt text
+*.md text
+*.html text
+*.js text
+*.css text
+
+# Archivos binarios no deben ser convertidos
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+
+# Configuración para otros tipos de archivos, si es necesario
+# Puedes agregar más extensiones según los tipos de archivos que utilices
+
+# Ejemplo para scripts de shell
+*.sh text
+
+# Ejemplo para archivos de configuración de Docker
+*.Dockerfile text
+
+# Ejemplo para archivos JSON y YAML
+*.json text
+*.yml text
+*.yaml text
