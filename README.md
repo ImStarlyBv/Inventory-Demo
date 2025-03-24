@@ -4,6 +4,8 @@
 <a href="https://uialberto.wordpress.com/2016/08/25/versionamiento-semantico-semver/">Image From here</a> |
 <a href="https://semver.org/lang/es/">Versionamiento Semántico – SemVer</a>
 
+<p><a href="https://vercel.com/richardson05s-projects/inventory-demo">Visit demo</a></p>
+
 ---
 
 # Astro Starter Kit: Basics
