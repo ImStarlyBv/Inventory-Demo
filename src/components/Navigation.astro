@@ -1,0 +1,88 @@
+---
+import Monitoring from "../assets/icons/monitoring.astro";
+import Folder from "../assets/icons/folder.astro";
+import Providers from "../assets/icons/providers.astro";
+import Shop from "../assets/icons/shop.astro";
+import Info from "../assets/icons/info.astro";
+import Settings from "../assets/icons/settings.astro";
+import Logout from "../assets/icons/logout.astro";
+---
+
+<div class="nav-menu h-full flex flex-col justify-between">
+  <nav>
+    <h2 class="text-2xl text-center font-semibold mb-10">
+      Gomez <br /> comunicaciones
+    </h2>
+    <div>
+      <ul>
+        <li class="mt-2">
+          <a href="" class="block">
+            <Monitoring />
+            Reportes
+          </a>
+        </li>
+        <hr class="my-3" />
+        <li class="mt-2">
+          <a href="" class="block">
+            <Folder />
+            Mi inventario</a
+          >
+        </li>
+        <li class="mt-2">
+          <a href="" class="block">
+            <Providers />
+            Proveedores</a
+          >
+        </li>
+        <li class="mt-2">
+          <a href="" class="block">
+            <Shop />
+            Catalogo Web</a
+          >
+        </li>
+        <hr class="my-3" />
+        <li class="mt-2">
+          <a
+            href=""
+            class="active block"
+          >
+            <Info color="white" />
+            Consultas
+          </a>
+        </li>
+        <li class="mt-2">
+          <a href="" class="block ">
+            <Settings />
+            Configuración</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <a href="" class="text-left">
+    <Logout />
+    Cerrar Sesión
+  </a>
+</div>
+
+<style>
+  a {
+    display: flex;
+    gap: 10px;
+  }
+
+  a:hover:not(.active) {
+    background-color: rgb(234, 234, 234);
+  }
+
+  a.active {
+    background-color: #2B3541;
+    color: white;
+  }
+
+  a {
+    padding: 10px;
+    border-radius: 10px;
+  }
+</style>
