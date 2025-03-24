@@ -1,3 +1,11 @@
+# Versionamiento Semántico
+![alt text](./docs/SemVerExample.png)
+
+<a href="https://uialberto.wordpress.com/2016/08/25/versionamiento-semantico-semver/">Image From here</a> |
+<a href="https://semver.org/lang/es/">Versionamiento Semántico – SemVer</a>
+
+---
+
 # Astro Starter Kit: Basics
 
 ```sh

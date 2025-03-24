@@ -1,11 +1,11 @@
 ---
-import Monitoring from "../assets/icons/monitoring.astro";
-import Folder from "../assets/icons/folder.astro";
-import Providers from "../assets/icons/providers.astro";
-import Shop from "../assets/icons/shop.astro";
-import Info from "../assets/icons/info.astro";
-import Settings from "../assets/icons/settings.astro";
-import Logout from "../assets/icons/logout.astro";
+import Monitoring from "../assets/icons/Monitoring.astro";
+import Folder from "../assets/icons/Folder.astro";
+import Providers from "../assets/icons/Providers.astro";
+import Shop from "../assets/icons/Shop.astro";
+import Info from "../assets/icons/Info.astro";
+import Settings from "../assets/icons/Settings.astro";
+import Logout from "../assets/icons/Logout.astro";
 ---
 
 <div class="nav-menu h-full flex flex-col justify-between">
@@ -60,7 +60,7 @@ import Logout from "../assets/icons/logout.astro";
     </div>
   </nav>
 
-  <a href="" class="text-left">
+  <a href="" class="text-left lg-btn">
     <Logout />
     Cerrar Sesión
   </a>
@@ -84,5 +84,19 @@ import Logout from "../assets/icons/logout.astro";
   a {
     padding: 10px;
     border-radius: 10px;
+  }
+
+  .lg-btn {
+    position: relative;
+  }
+
+  .lg-btn::after {
+    content: "";
+    height: 1.5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: -10px;
   }
 </style>
