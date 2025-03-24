@@ -1,3 +1,14 @@
-<div id="container">
-	<h1 class="text-3xl font-bold underline text-red-500">Home</h1>
-</div>
+---
+import Navigation from "./Navigation.astro"
+import Inventory from "./Inventory.astro"
+---
+
+<main id="" class=" grid grid-cols-[300px_1fr] h-svh">
+	<section class="navigation bg-[#F9F9F9] p-5 border-r-2 border-gray-400">
+		<Navigation />
+	</section>
+
+	<section class="inventory b-[#ffffff] p-5">
+		<Inventory />
+	</section>
+</main>

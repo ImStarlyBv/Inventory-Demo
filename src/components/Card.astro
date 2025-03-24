@@ -1,0 +1,16 @@
+---
+const { icon, quantity, description } = Astro.props;
+import Inventory from "../assets/icons/Inventory.astro";
+---
+
+<div class="card border-2 border-gray-300 w-full rounded-lg p-5 flex flex-col gap-3">
+  <div class="icon">
+    <Inventory />
+  </div>
+  <div class="quantity text-3xl font-semibold">
+    {quantity}
+  </div>
+  <div class="description">
+    {description}
+  </div>
+</div>
