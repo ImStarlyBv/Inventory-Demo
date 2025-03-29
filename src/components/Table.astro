@@ -145,8 +145,8 @@ const data = [
     estado: "Nuevo",
   },
 ];
-import Filterr from "../assets/icons/Filterr.astro";
-import Envoice from "../assets/icons/Envoice.astro";
+import FilterIcon from "@icons/FilterIcon.astro";
+import InvoiceIcon from "@icons/InvoiceIcon.astro";
 ---
 
 <div class="mt-10 flex justify-between">
@@ -161,7 +161,7 @@ import Envoice from "../assets/icons/Envoice.astro";
     <button
       class="border-2 border-gray-300 p-2 rounded-lg ml-2 flex gap-3 cursor-pointer"
     >
-      <Filterr />
+      <FilterIcon />
       Filtros
     </button>
   </div>
@@ -204,7 +204,7 @@ import Envoice from "../assets/icons/Envoice.astro";
           </td>
           <td class="p-2 border-2 border-y-gray-300 border-x-0">
             <button class="flex gap-2 border-2 border-black p-2 rounded-lg cursor-pointer">
-              <Envoice />
+              <InvoiceIcon />
             </button>
           </td>
         </tr>
