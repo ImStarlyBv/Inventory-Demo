@@ -10,7 +10,9 @@
       "@scripts/*": ["src/scripts/*"],
       "@pages/*": ["src/pages/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@icons/*": ["src/assets/icons/*"]
+      "@iconsAstro/*": ["src/assets/icons/astro/*"],
+      "@iconsReact/*": ["src/assets/icons/react/*"],
+      "@libs/*": ["src/libs/*"],
     }
   }
 }
