@@ -1,7 +1,7 @@
 import React from 'react';
 import * as XLSX from 'xlsx';
 
-const ExportTable = ({ children, className }) => {
+const ExportTableExcel = ({ children, className }) => {
   const now = new Date();
   const currentDate = `${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()}-${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}`;
 
@@ -23,4 +23,4 @@ const ExportTable = ({ children, className }) => {
   );
 };
 
-export default ExportTable;
+export default ExportTableExcel;
