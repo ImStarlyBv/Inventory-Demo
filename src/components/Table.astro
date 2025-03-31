@@ -1,7 +1,5 @@
 ---
-const response = await fetch("http://localhost:4321/src/data.json");
-const data = await response.json();
-
+import data from "../data.json";
 const cellphones = data.equipos;
 const brands = data.marcas;
 
@@ -64,7 +62,6 @@ import Modal from "./Modal.astro";
     </div>
   </div>
 </Modal> -->
-
 <div class="mt-10 flex justify-between">
   <h3 class="text-2xl font-semibold">Todos los productos</h3>
   <div class="search flex gap-2">
@@ -83,7 +80,9 @@ import Modal from "./Modal.astro";
   </div>
 </div>
 
-<table class="inventory-table w-full border-2 border-gray-200 mt-5 border-collapse">
+<table
+  class="inventory-table w-full border-2 border-gray-200 mt-5 border-collapse"
+>
   <thead class="bg-gray-200 text-[#8B8B8B] text-left">
     <th class="p-2">ID</th>
     <th class="p-2">Marca</th>
@@ -99,7 +98,7 @@ import Modal from "./Modal.astro";
     {
       cellphones.map(
         (cellphone, i) =>
-          (
+          i < 10 && (
             <tr class="text-[#8B8B8B]">
               <td class="p-2 border-2 border-y-gray-300 border-x-0">
                 {cellphone.id}
