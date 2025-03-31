@@ -3,6 +3,7 @@ import Card from "./Card.astro";
 import Options from "@components/Options";
 import UserInformation from "./UserInformation.astro";
 import FilterTable from "./FilterTable";
+import AddIcon from "@iconsAstro/AddIcon.astro";
 ---
 
 <div class="">
@@ -11,7 +12,13 @@ import FilterTable from "./FilterTable";
   <div class="flex justify-between mt-10">
     <h1 class="font-semibold text-3xl">Mi inventario</h1>
 
-    <div class="buttons flex gap-5 relative">
+    <div class="buttons flex gap-3 relative">
+      <button
+        class="bg-[#35D399] text-[#333333] py-2 px-4 rounded-lg cursor-pointer flex gap-3 items-center w-full"
+      >
+        <AddIcon />
+        Añadir Producto
+      </button>
       <Options client:load />
     </div>
   </div>
@@ -23,5 +30,5 @@ import FilterTable from "./FilterTable";
     <Card icon="1" quantity="4" description="Cantidad de marcas" />
   </div>
 
-   <FilterTable client:load />
+  <FilterTable client:load />
 </div>

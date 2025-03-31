@@ -1,9 +1,9 @@
 import React from 'react';
 import * as XLSX from 'xlsx';
 
-const ExportTable = ({children, className}) => {
+const ExportTable = ({ children, className }) => {
   const now = new Date();
-    const currentDate = `${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()}-${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}`;
+  const currentDate = `${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()}-${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}`;
 
   const exportToExcel = () => {
     const tabla = document.querySelector('.inventory-table');
@@ -14,7 +14,10 @@ const ExportTable = ({children, className}) => {
   };
 
   return (
-    <button className={className} onClick={exportToExcel}>
+    <button
+      className={`border-2 border-gray-500 py-2 px-4 rounded-lg cursor-pointer flex gap-3 items-center whitespace-nowrap ${className}`}
+      onClick={exportToExcel}
+    >
       {children}
     </button>
   );
