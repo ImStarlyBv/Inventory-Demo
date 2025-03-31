@@ -11,76 +11,84 @@ import SettingsIcon from "@icons/SettingsIcon.astro";
 import LogoutIcon from "@icons/LogoutIcon.astro";
 ---
 
-<div class="nav-menu h-full flex flex-col justify-between">
-  <nav>
-    <h2 class="text-2xl text-center font-semibold mb-10">
-      Logo
-    </h2>
-    <div>
-      <ul>
-        <li class="mt-2">
-          <a href="/reportes" class={`${verifyPath("/reportes") && "active"}`}>
-            <MonitoringIcon color={`${verifyPath("/reportes") && "white"}`} />
-            Reportes
-          </a>
-        </li>
-        <hr class="my-3" />
-        <li class="mt-2">
-          <a
-            href="/inventario"
-            class={`${verifyPath("/inventario") && "active"}`}
-          >
-            <FolderIcon color={`${verifyPath("/inventario") && "white"}`} />
-            Mi inventario</a
-          >
-        </li>
-        <li class="mt-2">
-          <a
-            href="/proveedores"
-            class={`${verifyPath("/proveedores") && "active"}`}
-          >
-            <ProvidersIcon color={`${verifyPath("/proveedores") && "white"}`} />
-            Proveedores</a
-          >
-        </li>
-        <li class="mt-2">
-          <a
-            href="/catalogo-web"
-            class={`${verifyPath("/catalogo-web") && "active"}`}
-          >
-            <ShopIcon color={`${verifyPath("/catalogo-web") && "white"}`} />
-            Catálogo Web</a
-          >
-        </li>
-        <hr class="my-3" />
-        <li class="mt-2">
-          <a
-            href="/consultas"
-            class={`${verifyPath("/consultas") && "active"}`}
-          >
-            <InfoIcon color={`${verifyPath("/consultas") && "white"}`} />
-            Consultas
-          </a>
-        </li>
-        <li class="mt-2">
-          <a
-            href="/configuracion"
-            class={`${verifyPath("/configuracion") && "active"}`}
-          >
-            <SettingsIcon color={`${verifyPath("/configuracion") && "white"}`} />
-            Configuración</a
-          >
-        </li>
-      </ul>
-    </div>
-  </nav>
+<aside
+  class="navigation bg-[#F9F9F9] p-5 border-r-2 border-gray-400 h-svh sticky top-0"
+>
+  <div class="nav-menu h-full flex flex-col justify-between">
+    <nav>
+      <h2 class="text-2xl text-center font-semibold mb-10">Logo</h2>
+      <div>
+        <ul>
+          <li class="mt-2">
+            <a
+              href="/reportes"
+              class={`${verifyPath("/reportes") && "active"}`}
+            >
+              <MonitoringIcon color={`${verifyPath("/reportes") && "white"}`} />
+              Reportes
+            </a>
+          </li>
+          <hr class="my-3" />
+          <li class="mt-2">
+            <a
+              href="/inventario"
+              class={`${verifyPath("/inventario") && "active"}`}
+            >
+              <FolderIcon color={`${verifyPath("/inventario") && "white"}`} />
+              Mi inventario</a
+            >
+          </li>
+          <li class="mt-2">
+            <a
+              href="/otro-enlace-1"
+              class={`${verifyPath("/otro-enlace-1") && "active"}`}
+            >
+              <ProvidersIcon
+                color={`${verifyPath("/otro-enlace-1") && "white"}`}
+              />
+              Otro enlace 1</a
+            >
+          </li>
+          <li class="mt-2">
+            <a
+              href="/otro-enlace-2"
+              class={`${verifyPath("/otro-enlace-2") && "active"}`}
+            >
+              <ShopIcon color={`${verifyPath("/otro-enlace-2") && "white"}`} />
+              Otro enlace 2</a
+            >
+          </li>
+          <hr class="my-3" />
+          <li class="mt-2">
+            <a
+              href="/otro-enlace-3"
+              class={`${verifyPath("/otro-enlace-3") && "active"}`}
+            >
+              <InfoIcon color={`${verifyPath("/otro-enlace-3") && "white"}`} />
+              Otro enlace 3
+            </a>
+          </li>
+          <li class="mt-2">
+            <a
+              href="/otro-enlace-4"
+              class={`${verifyPath("/otro-enlace-4") && "active"}`}
+            >
+              <SettingsIcon
+                color={`${verifyPath("/otro-enlace-4") && "white"}`}
+              />
+              Otro enlace 4</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <a href="" class="text-left lg-btn" id="btn-logout">
-    <LogoutIcon />
-    Cerrar Sesión
-  </a>
-</div>
-
+    <a href="" class="text-left lg-btn" id="btn-logout">
+      <LogoutIcon />
+      Cerrar Sesión
+    </a>
+  </div>
+</aside>
 <style>
   a {
     display: flex;
