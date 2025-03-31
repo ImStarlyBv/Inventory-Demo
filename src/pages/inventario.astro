@@ -1,18 +1,11 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import Navigation from "@components/Navigation.astro";
 import Inventory from "@components/Inventory.astro";
 import "../global.css";
 ---
 
 <Layout title="Mi inventario">
-	<main id="" class="grid grid-cols-[300px_1fr]">
-		<section
-			class="navigation bg-[#F9F9F9] p-5 border-r-2 border-gray-400 h-svh sticky top-0"
-		>
-			<Navigation />
-		</section>
-
+	<main>
 		<section class="inventory b-[#ffffff] p-5">
 			<Inventory />
 		</section>
