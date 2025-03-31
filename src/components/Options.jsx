@@ -1,7 +1,7 @@
 import { useState } from "react"
-import DownloadIconReact from "@icons/DownloadIconReact"
-import AddIconReact from "@icons/AddIconReact"
-import DotsOptionsIconReact from "@icons/DotsOptionsIconReact"
+import DownloadIconReact from "@iconsReact/DownloadIconReact"
+import AddIconReact from "@iconsReact/AddIconReact"
+import DotsOptionsIconReact from "@iconsReact/DotsOptionsIconReact"
 import ExportTable from "./ExportTable"
 
 const Options = () => {

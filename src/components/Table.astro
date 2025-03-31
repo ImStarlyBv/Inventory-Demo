@@ -10,8 +10,8 @@ const colorOptions = [...new Set(cellphones.map((phone) => phone.color))];
 
 const statusOptions = [...new Set(cellphones.map((phone) => phone.estado))];
 
-import FilterIcon from "@icons/FilterIcon.astro";
-import InvoiceIcon from "@icons/InvoiceIcon.astro";
+import FilterIcon from "@iconsAstro/FilterIcon.astro";
+import InvoiceIcon from "@iconsAstro/InvoiceIcon.astro";
 import Modal from "./Modal.astro";
 ---
 
@@ -83,7 +83,7 @@ import Modal from "./Modal.astro";
   </div>
 </div>
 
-<table class="w-full border-2 border-gray-200 mt-5 border-collapse">
+<table class="inventory-table w-full border-2 border-gray-200 mt-5 border-collapse">
   <thead class="bg-gray-200 text-[#8B8B8B] text-left">
     <th class="p-2">ID</th>
     <th class="p-2">Marca</th>
@@ -99,7 +99,7 @@ import Modal from "./Modal.astro";
     {
       cellphones.map(
         (cellphone, i) =>
-          i < 10 && (
+          (
             <tr class="text-[#8B8B8B]">
               <td class="p-2 border-2 border-y-gray-300 border-x-0">
                 {cellphone.id}

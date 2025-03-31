@@ -2,13 +2,13 @@
 const { pathname } = Astro.url;
 const verifyPath = (route) => pathname === route && true;
 
-import MonitoringIcon from "@icons/MonitoringIcon.astro";
-import FolderIcon from "@icons/FolderIcon.astro";
-import ProvidersIcon from "@icons/ProvidersIcon.astro";
-import ShopIcon from "@icons/ShopIcon.astro";
-import InfoIcon from "@icons/InfoIcon.astro";
-import SettingsIcon from "@icons/SettingsIcon.astro";
-import LogoutIcon from "@icons/LogoutIcon.astro";
+import MonitoringIcon from "@iconsAstro/MonitoringIcon.astro";
+import FolderIcon from "@iconsAstro/FolderIcon.astro";
+import ProvidersIcon from "@iconsAstro/ProvidersIcon.astro";
+import ShopIcon from "@iconsAstro/ShopIcon.astro";
+import InfoIcon from "@iconsAstro/InfoIcon.astro";
+import SettingsIcon from "@iconsAstro/SettingsIcon.astro";
+import LogoutIcon from "@iconsAstro/LogoutIcon.astro";
 ---
 
 <aside
@@ -21,10 +21,10 @@ import LogoutIcon from "@icons/LogoutIcon.astro";
         <ul>
           <li class="mt-2">
             <a
-              href="/reportes"
-              class={`${verifyPath("/reportes") && "active"}`}
+              href="/"
+              class={`${verifyPath("/") && "active"}`}
             >
-              <MonitoringIcon color={`${verifyPath("/reportes") && "white"}`} />
+              <MonitoringIcon color={`${verifyPath("/") && "white"}`} />
               Reportes
             </a>
           </li>
