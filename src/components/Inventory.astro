@@ -1,8 +1,8 @@
 ---
-import Table from "./Table.astro";
 import Card from "./Card.astro";
 import Options from "@components/Options";
 import UserInformation from "./UserInformation.astro";
+import FilterTable from "./FilterTable";
 ---
 
 <div class="">
@@ -23,114 +23,5 @@ import UserInformation from "./UserInformation.astro";
     <Card icon="1" quantity="4" description="Cantidad de marcas" />
   </div>
 
-  <Table />
+   <FilterTable client:load />
 </div>
-
-<script>
-  /*
-  const btnprintinventory = document.querySelector("#btn-print-inventory");
-  btnprintinventory?.addEventListener("click", printInvoice);
-
-  function printInvoice() {
-    console.log("Imprimir");
-
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
-
-    const invoiceTable = document.querySelector(".inventory-table");
-    const rows = invoiceTable.querySelectorAll("tr");
-    let yPosition = 15; // Posición Y inicial en el PDF
-
-    // Generar código de fecha y hora
-    const now = new Date();
-    const invoiceCode = `${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()}-${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}`;
-
-    doc.text(`Inventario / Factura: ${invoiceCode}`, 10, yPosition);
-    yPosition += 20; // 10 // Posision y donde inicia la tabla
-
-    // Definir las coordenadas X para cada columna
-    //const xPositions = [10, 60, 110, 160]; // Ajusta estos valores según necesites
-    //const xPositions = [10, 25, 45, 80, 150, 160, 230, 250]; // Ajusta estos valores según necesites
-
-    // Agregar contenido de la tabla
-    /* rows.forEach((row, rowIndex) => {
-      const cells = row.querySelectorAll("th, td");
-
-      // Si es la fila de encabezado, establecer la fuente en negrita
-      doc.setFontSize(11);
-      if (rowIndex === 0 || rowIndex === rows.length - 1) {
-        doc.setFont("helvetica", "bold");
-      } else {
-        doc.setFont("helvetica", "normal");
-      }
-
-      cells.forEach((cell, cellIndex) => {
-        if (rowIndex === rows.length - 1) {
-          // En la última fila, colocar "Total" en la primera columna y el monto en la última
-          if (cellIndex === 0 || cellIndex === cells.length - 1) {
-            doc.text(
-              cell.textContent,
-              xPositions[cellIndex === 0 ? 0 : 3],
-              yPosition,
-            );
-          }
-        } else {
-          doc.text(cell.textContent, xPositions[cellIndex], yPosition);
-        }
-      });
-
-      yPosition += 10;
-
-      if (yPosition == 290) {
-        yPosition = 20
-        doc.addPage()
-      }
-
-      // Agregar borde inferior para cada fila del tbody y encabezado
-      if (rowIndex < rows.length - 1) {
-        doc.line(10, yPosition - 7, 200, yPosition - 7); // Línea separadora
-      }
-    }); * /
-
-    const numColumns = rows[0].querySelectorAll("th, td").length;
-    let columnWidths = new Array(numColumns).fill(0);
-    doc.setFontSize(11);
-
-    rows.forEach((row) => {
-      const cells = row.querySelectorAll("th, td");
-      cells.forEach((cell, colIndex) => {
-        let textWidth = doc.getTextDimensions(cell.textContent).w;
-        if (textWidth > columnWidths[colIndex]) {
-          columnWidths[colIndex] = textWidth; // Guardar el ancho máximo
-        }
-      });
-    });
-
-    // Paso 3: Calcular las posiciones X de las columnas de forma dinámica
-    let xPositions = [];
-    let currentX = 10; // Margen izquierdo inicial
-    columnWidths.forEach((width) => {
-      xPositions.push(currentX);
-      currentX += width + 10; // Sumar espacio entre columnas
-    });
-
-    // Ahora `xPositions` tiene las posiciones correctas para cada columna
-
-    console.log(xPositions); // Puedes imprimir para verificar
-
-    // Paso 4: Dibujar la tabla con las posiciones calculadas
-    rows.forEach((row, rowIndex) => {
-      const cells = row.querySelectorAll("th, td");
-      let yPosition = 30 + rowIndex * 10; // Espaciado entre filas
-
-      cells.forEach((cell, cellIndex) => {
-        doc.text(cell.textContent, xPositions[cellIndex], yPosition);
-      });
-    });
-
-    // Guardar el archivo PDF
-    doc.save(`factura_${invoiceCode}.pdf`);
-  }
-    */
-</script>
-<script src="@libs/jsPdf.js"></script>
