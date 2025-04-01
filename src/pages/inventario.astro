@@ -1,0 +1,13 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Inventory from "@components/Inventory.astro";
+import "../global.css";
+---
+
+<Layout title="Mi inventario">
+	<main class="overflow-auto">
+		<section class="inventory b-[#ffffff] p-5">
+			<Inventory />
+		</section>
+	</main>
+</Layout>

@@ -1,31 +1,25 @@
 ---
-import Table from "./Table.astro";
 import Card from "./Card.astro";
-import Download from "../assets/icons/Download.astro";
-import Add from "../assets/icons/Add.astro";
+import Options from "@components/Options";
+import UserInformation from "./UserInformation.astro";
+import FilterTable from "./FilterTable";
+import AddIcon from "@iconsAstro/AddIcon.astro";
 ---
 
 <div class="">
-  <div class="user-information flex flex-row-reverse">
-    <div class="photo h-[50px] w-[50px] bg-black rounded-full"></div>
-  </div>
+  <UserInformation />
 
   <div class="flex justify-between mt-10">
     <h1 class="font-semibold text-3xl">Mi inventario</h1>
 
-    <div class="buttons flex gap-5">
+    <div class="buttons flex gap-3 relative">
       <button
-        class="border-2 border-gray-500 py-2 px-4 rounded-lg cursor-pointer flex gap-3 items-center"
+        class="bg-[#35D399] text-[#333333] py-2 px-4 rounded-lg cursor-pointer flex gap-3 items-center w-full"
       >
-        <Download />
-        Descargar inventario
-      </button>
-      <button
-        class="bg-[#35D399] text-[#333333] py-2 px-4 rounded-lg cursor-pointer flex gap-3 items-center"
-      >
-        <Add />
+        <AddIcon />
         Añadir Producto
       </button>
+      <Options client:load />
     </div>
   </div>
 
@@ -36,5 +30,5 @@ import Add from "../assets/icons/Add.astro";
     <Card icon="1" quantity="4" description="Cantidad de marcas" />
   </div>
 
-  <Table />
+  <FilterTable client:load />
 </div>

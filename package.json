@@ -9,8 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^4.2.2",
     "@tailwindcss/vite": "^4.0.15",
     "astro": "^5.5.4",
-    "tailwindcss": "^4.0.15"
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.0.15",
+    "xlsx": "^0.18.5"
   }
 }

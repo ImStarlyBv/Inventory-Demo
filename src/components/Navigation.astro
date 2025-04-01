@@ -1,71 +1,94 @@
 ---
-import Monitoring from "../assets/icons/monitoring.astro";
-import Folder from "../assets/icons/folder.astro";
-import Providers from "../assets/icons/providers.astro";
-import Shop from "../assets/icons/shop.astro";
-import Info from "../assets/icons/info.astro";
-import Settings from "../assets/icons/settings.astro";
-import Logout from "../assets/icons/logout.astro";
+const { pathname } = Astro.url;
+const verifyPath = (route) => pathname === route && true;
+
+import MonitoringIcon from "@iconsAstro/MonitoringIcon.astro";
+import FolderIcon from "@iconsAstro/FolderIcon.astro";
+import ProvidersIcon from "@iconsAstro/ProvidersIcon.astro";
+import ShopIcon from "@iconsAstro/ShopIcon.astro";
+import InfoIcon from "@iconsAstro/InfoIcon.astro";
+import SettingsIcon from "@iconsAstro/SettingsIcon.astro";
+import LogoutIcon from "@iconsAstro/LogoutIcon.astro";
 ---
 
-<div class="nav-menu h-full flex flex-col justify-between">
-  <nav>
-    <h2 class="text-2xl text-center font-semibold mb-10">
-      Gomez <br /> comunicaciones
-    </h2>
-    <div>
-      <ul>
-        <li class="mt-2">
-          <a href="" class="block">
-            <Monitoring />
-            Reportes
-          </a>
-        </li>
-        <hr class="my-3" />
-        <li class="mt-2">
-          <a href="" class="block">
-            <Folder />
-            Mi inventario</a
-          >
-        </li>
-        <li class="mt-2">
-          <a href="" class="block">
-            <Providers />
-            Proveedores</a
-          >
-        </li>
-        <li class="mt-2">
-          <a href="" class="block">
-            <Shop />
-            Catalogo Web</a
-          >
-        </li>
-        <hr class="my-3" />
-        <li class="mt-2">
-          <a
-            href=""
-            class="active block"
-          >
-            <Info color="white" />
-            Consultas
-          </a>
-        </li>
-        <li class="mt-2">
-          <a href="" class="block ">
-            <Settings />
-            Configuración</a
-          >
-        </li>
-      </ul>
-    </div>
-  </nav>
+<aside
+  class="navigation bg-[#F9F9F9] p-5 border-r-2 border-gray-400 h-svh sticky top-0"
+>
+  <div class="nav-menu h-full flex flex-col justify-between">
+    <nav>
+      <h2 class="text-2xl text-center font-semibold mb-10">Logo</h2>
+      <div>
+        <ul>
+          <li class="mt-2">
+            <a
+              href="/"
+              class={`${verifyPath("/") && "active"}`}
+            >
+              <MonitoringIcon color={`${verifyPath("/") && "white"}`} />
+              Reportes
+            </a>
+          </li>
+          <hr class="my-3" />
+          <li class="mt-2">
+            <a
+              href="/inventario"
+              class={`${verifyPath("/inventario") && "active"}`}
+            >
+              <FolderIcon color={`${verifyPath("/inventario") && "white"}`} />
+              Mi inventario</a
+            >
+          </li>
+          <li class="mt-2">
+            <a
+              href="/otro-enlace-1"
+              class={`${verifyPath("/otro-enlace-1") && "active"}`}
+            >
+              <ProvidersIcon
+                color={`${verifyPath("/otro-enlace-1") && "white"}`}
+              />
+              Otro enlace 1</a
+            >
+          </li>
+          <li class="mt-2">
+            <a
+              href="/otro-enlace-2"
+              class={`${verifyPath("/otro-enlace-2") && "active"}`}
+            >
+              <ShopIcon color={`${verifyPath("/otro-enlace-2") && "white"}`} />
+              Otro enlace 2</a
+            >
+          </li>
+          <hr class="my-3" />
+          <li class="mt-2">
+            <a
+              href="/otro-enlace-3"
+              class={`${verifyPath("/otro-enlace-3") && "active"}`}
+            >
+              <InfoIcon color={`${verifyPath("/otro-enlace-3") && "white"}`} />
+              Otro enlace 3
+            </a>
+          </li>
+          <li class="mt-2">
+            <a
+              href="/otro-enlace-4"
+              class={`${verifyPath("/otro-enlace-4") && "active"}`}
+            >
+              <SettingsIcon
+                color={`${verifyPath("/otro-enlace-4") && "white"}`}
+              />
+              Otro enlace 4</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <a href="" class="text-left">
-    <Logout />
-    Cerrar Sesión
-  </a>
-</div>
-
+    <a href="" class="text-left lg-btn" id="btn-logout">
+      <LogoutIcon />
+      Cerrar Sesión
+    </a>
+  </div>
+</aside>
 <style>
   a {
     display: flex;
@@ -77,7 +100,7 @@ import Logout from "../assets/icons/logout.astro";
   }
 
   a.active {
-    background-color: #2B3541;
+    background-color: #2b3541;
     color: white;
   }
 
@@ -85,4 +108,25 @@ import Logout from "../assets/icons/logout.astro";
     padding: 10px;
     border-radius: 10px;
   }
+
+  .lg-btn {
+    position: relative;
+  }
+
+  .lg-btn::after {
+    content: "";
+    height: 1.5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: -10px;
+  }
 </style>
+
+<script>
+  document.querySelector("#btn-logout").addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("Cerrar sesión");
+  });
+</script>
