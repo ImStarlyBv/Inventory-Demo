@@ -13,6 +13,7 @@
       "@iconsAstro/*": ["src/assets/icons/astro/*"],
       "@iconsReact/*": ["src/assets/icons/react/*"],
       "@libs/*": ["src/libs/*"],
+      "@utils/*": ["src/utils/*"],
     }
   }
 }
