@@ -1,9 +1,13 @@
 ---
-import Home from '../components/Home.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "@layouts/Layout.astro";
+import Reports from "@components/Reports.astro";
 import "../global.css";
 ---
 
-<Layout>
-	<Home />
+<Layout title="Reportes">
+	<main>
+		<section class="reports b-[#ffffff] p-5">
+			<Reports />
+		</section>
+	</main>
 </Layout>

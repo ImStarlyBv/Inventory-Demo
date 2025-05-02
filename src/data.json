@@ -1,0 +1,376 @@
+{
+  "equipos": [
+    {
+      "id": 1,
+      "marca": "Samsung",
+      "modelo": "Galaxy S23",
+      "almacenamiento": "128GB",
+      "color": "Negro",
+      "precio": 899,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 2,
+      "marca": "Apple",
+      "modelo": "iPhone 14 Pro",
+      "almacenamiento": "256GB",
+      "color": "Morado",
+      "precio": 1099,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 3,
+      "marca": "Xiaomi",
+      "modelo": "Redmi Note 12",
+      "almacenamiento": "128GB",
+      "color": "Azul",
+      "precio": 349,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 4,
+      "marca": "Motorola",
+      "modelo": "Edge 30",
+      "almacenamiento": "256GB",
+      "color": "Blanco",
+      "precio": 599,
+      "estado": "Usado"
+    },
+    {
+      "id": 5,
+      "marca": "OnePlus",
+      "modelo": "10 Pro",
+      "almacenamiento": "512GB",
+      "color": "Verde",
+      "precio": 799,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 6,
+      "marca": "Samsung",
+      "modelo": "Galaxy Z Flip 4",
+      "almacenamiento": "256GB",
+      "color": "Rosa",
+      "precio": 999,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 7,
+      "marca": "Apple",
+      "modelo": "iPhone 13",
+      "almacenamiento": "128GB",
+      "color": "Rojo",
+      "precio": 799,
+      "estado": "Usado"
+    },
+    {
+      "id": 8,
+      "marca": "Xiaomi",
+      "modelo": "Poco X4 Pro",
+      "almacenamiento": "256GB",
+      "color": "Negro",
+      "precio": 429,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 9,
+      "marca": "Realme",
+      "modelo": "GT Neo 3",
+      "almacenamiento": "128GB",
+      "color": "Amarillo",
+      "precio": 499,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 10,
+      "marca": "Google",
+      "modelo": "Pixel 7",
+      "almacenamiento": "256GB",
+      "color": "Blanco",
+      "precio": 599,
+      "estado": "Nuevo"
+    },
+
+    {
+      "id": 1,
+      "marca": "Samsung",
+      "modelo": "Galaxy S23",
+      "almacenamiento": "128GB",
+      "color": "Negro",
+      "precio": 899,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 2,
+      "marca": "Apple",
+      "modelo": "iPhone 14 Pro",
+      "almacenamiento": "256GB",
+      "color": "Morado",
+      "precio": 1099,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 3,
+      "marca": "Xiaomi",
+      "modelo": "Redmi Note 12",
+      "almacenamiento": "128GB",
+      "color": "Azul",
+      "precio": 349,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 4,
+      "marca": "Motorola",
+      "modelo": "Edge 30",
+      "almacenamiento": "256GB",
+      "color": "Blanco",
+      "precio": 599,
+      "estado": "Usado"
+    },
+    {
+      "id": 5,
+      "marca": "OnePlus",
+      "modelo": "10 Pro",
+      "almacenamiento": "512GB",
+      "color": "Verde",
+      "precio": 799,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 6,
+      "marca": "Samsung",
+      "modelo": "Galaxy Z Flip 4",
+      "almacenamiento": "256GB",
+      "color": "Rosa",
+      "precio": 999,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 7,
+      "marca": "Apple",
+      "modelo": "iPhone 13",
+      "almacenamiento": "128GB",
+      "color": "Rojo",
+      "precio": 799,
+      "estado": "Usado"
+    },
+    {
+      "id": 8,
+      "marca": "Xiaomi",
+      "modelo": "Poco X4 Pro",
+      "almacenamiento": "256GB",
+      "color": "Negro",
+      "precio": 429,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 9,
+      "marca": "Realme",
+      "modelo": "GT Neo 3",
+      "almacenamiento": "128GB",
+      "color": "Amarillo",
+      "precio": 499,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 10,
+      "marca": "Google",
+      "modelo": "Pixel 7",
+      "almacenamiento": "256GB",
+      "color": "Blanco",
+      "precio": 599,
+      "estado": "Nuevo"
+    },
+
+    {
+      "id": 1,
+      "marca": "Samsung",
+      "modelo": "Galaxy S23",
+      "almacenamiento": "128GB",
+      "color": "Negro",
+      "precio": 899,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 2,
+      "marca": "Apple",
+      "modelo": "iPhone 14 Pro",
+      "almacenamiento": "256GB",
+      "color": "Morado",
+      "precio": 1099,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 3,
+      "marca": "Xiaomi",
+      "modelo": "Redmi Note 12",
+      "almacenamiento": "128GB",
+      "color": "Azul",
+      "precio": 349,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 4,
+      "marca": "Motorola",
+      "modelo": "Edge 30",
+      "almacenamiento": "256GB",
+      "color": "Blanco",
+      "precio": 599,
+      "estado": "Usado"
+    },
+    {
+      "id": 5,
+      "marca": "OnePlus",
+      "modelo": "10 Pro",
+      "almacenamiento": "512GB",
+      "color": "Verde",
+      "precio": 799,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 6,
+      "marca": "Samsung",
+      "modelo": "Galaxy Z Flip 4",
+      "almacenamiento": "256GB",
+      "color": "Rosa",
+      "precio": 999,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 7,
+      "marca": "Apple",
+      "modelo": "iPhone 13",
+      "almacenamiento": "128GB",
+      "color": "Rojo",
+      "precio": 799,
+      "estado": "Usado"
+    },
+    {
+      "id": 8,
+      "marca": "Xiaomi",
+      "modelo": "Poco X4 Pro",
+      "almacenamiento": "256GB",
+      "color": "Negro",
+      "precio": 429,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 9,
+      "marca": "Realme",
+      "modelo": "GT Neo 3",
+      "almacenamiento": "128GB",
+      "color": "Amarillo",
+      "precio": 499,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 10,
+      "marca": "Google",
+      "modelo": "Pixel 7",
+      "almacenamiento": "256GB",
+      "color": "Blanco",
+      "precio": 599,
+      "estado": "Nuevo"
+    },
+
+    {
+      "id": 1,
+      "marca": "Samsung",
+      "modelo": "Galaxy S23",
+      "almacenamiento": "128GB",
+      "color": "Negro",
+      "precio": 899,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 2,
+      "marca": "Apple",
+      "modelo": "iPhone 14 Pro",
+      "almacenamiento": "256GB",
+      "color": "Morado",
+      "precio": 1099,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 3,
+      "marca": "Xiaomi",
+      "modelo": "Redmi Note 12",
+      "almacenamiento": "128GB",
+      "color": "Azul",
+      "precio": 349,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 4,
+      "marca": "Motorola",
+      "modelo": "Edge 30",
+      "almacenamiento": "256GB",
+      "color": "Blanco",
+      "precio": 599,
+      "estado": "Usado"
+    },
+    {
+      "id": 5,
+      "marca": "OnePlus",
+      "modelo": "10 Pro",
+      "almacenamiento": "512GB",
+      "color": "Verde",
+      "precio": 799,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 6,
+      "marca": "Samsung",
+      "modelo": "Galaxy Z Flip 4",
+      "almacenamiento": "256GB",
+      "color": "Rosa",
+      "precio": 999,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 7,
+      "marca": "Apple",
+      "modelo": "iPhone 13",
+      "almacenamiento": "128GB",
+      "color": "Rojo",
+      "precio": 799,
+      "estado": "Usado"
+    },
+    {
+      "id": 8,
+      "marca": "Xiaomi",
+      "modelo": "Poco X4 Pro",
+      "almacenamiento": "256GB",
+      "color": "Negro",
+      "precio": 429,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 9,
+      "marca": "Realme",
+      "modelo": "GT Neo 3",
+      "almacenamiento": "128GB",
+      "color": "Amarillo",
+      "precio": 499,
+      "estado": "Nuevo"
+    },
+    {
+      "id": 10,
+      "marca": "Google",
+      "modelo": "Pixel 7",
+      "almacenamiento": "256GB",
+      "color": "Blanco",
+      "precio": 599,
+      "estado": "Nuevo"
+    }
+  ],
+  "marcas": [
+    "Samsung",
+    "Apple",
+    "Xiaomi",
+    "Motorola",
+    "OnePlus",
+    "Realme",
+    "Google"
+  ]
+}

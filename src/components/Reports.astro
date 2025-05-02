@@ -1,0 +1,19 @@
+---
+import Card from "./Card.astro";
+import UserInformation from "./UserInformation.astro";
+---
+
+<div class="">
+  <UserInformation />
+
+  <div class="flex justify-between mt-10">
+    <h1 class="font-semibold text-3xl">Reportes</h1>
+  </div>
+
+  <div class="cards grid grid-cols-2 gap-5 mt-5">
+    <Card icon="Inventory" quantity="20" description="Productos en total" />
+    <Card icon="1" quantity="15" description="Productos disponibles" />
+    <Card icon="1" quantity="5" description="Total vendido" />
+    <Card icon="1" quantity="4" description="Cantidad de marcas" />
+  </div>
+</div>
